@@ -1,12 +1,15 @@
 package fileHandling;
 
 import java.io.*;
+import java.nio.file.*;
 import java.util.*;
 
 public class FileHandling {
     public static void main(String[] args) {
         int lineCount = 0, wordCount = 0;
         try {
+            Path path = FileSystems.getDefault().getPath(".");
+            System.out.println(path);
             File javaFile = new File("Intelij\\src\\fileHandling\\FileHandling.java").getAbsoluteFile();
             File NewFile = new File("Intelij\\src\\fileHandling\\FileHandling.txt").getAbsoluteFile();
             if (NewFile.createNewFile())
