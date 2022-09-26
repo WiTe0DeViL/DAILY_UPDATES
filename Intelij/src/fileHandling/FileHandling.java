@@ -7,8 +7,16 @@ public class FileHandling {
     public static void main(String[] args) {
         int lineCount = 0, wordCount = 0;
         try {
+            // File javaFile = new File(".").getAbsoluteFile(); this command get my directory location
+            // You can give file location also which means java file
+            
+            // Location of my java file
             File javaFile = new File("Intelij\\src\\fileHandling\\FileHandling.java").getAbsoluteFile();
+
+            // new text File to be created in this location
             File NewFile = new File("Intelij\\src\\fileHandling\\FileHandling.txt").getAbsoluteFile();
+
+            //It will check whether file is present are not
             if (NewFile.createNewFile())
                 System.out.println("created!");
             else System.out.println("Already Exists");
