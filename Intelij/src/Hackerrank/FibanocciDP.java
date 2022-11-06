@@ -1,15 +1,13 @@
 package Hackerrank;
 
-import java.util.ArrayList;
-
 public class FibanocciDP {
     public static void main(String[] args) {
-        System.out.println(fib(7));
+        System.out.println(fib(50));
     }
 
-    static int[] cache = new int[1000];
+    static long[] cache = new long[1000];
 
-    private static int fib(int n) {
+    private static long fib(int n) {
         if (n == 0 || n == 1)
             return n;
         if (cache[n] != 0) {
