@@ -3,7 +3,7 @@ package Hackerrank;
 public class LongestCommonPrefix {
 
     public static void main(String[] args) {
-        String[] strs = {"a", "a", "b"};
+        String[] strs = {"tech", "tecnbt", "technology"};
         System.out.println(longestCommonPrefix(strs));
     }
 
